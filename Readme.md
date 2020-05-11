@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Stanislau Dzindzikau](https://up.htmlacademy.ru/htmlcss/28/user/1420381).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
