@@ -106,24 +106,53 @@
       </div>
     </section>
     <aside>
-      <section>
-        <h3>Цвет</h3>
-        <ul>
-          <li>Чёрный</li>
-          <li>Белый</li>
-          <li>Синий</li>
-          <li>Красный</li>
-          <li>Розовый</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Bluetooth</h3>
-        <ul>
-          <li>Есть</li>
-          <li>Нет</li>
-        </ul>
-        <a href="#">показать</a>
-      </section>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Стоимость</legend>    
+          <!-- Я не знаю как это верстать! -->
+        </fieldset>
+
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="black-field" checked>
+              <label for="black-field">черный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="white-field">
+              <label for="white-field">белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="blue-field" checked>
+              <label for="blue-field">синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="red-field" checked>
+              <label for="red-field">красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="pink-field">
+              <label for="pink-field">розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="bluetooth-true" id="bluetooth-true-field" checked>
+              <label for="bluetooth-true-field">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth-false" id="bluetooth-false-field">
+              <label for="bluetooth-false-field">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="Отправить">
+      </form>
     </aside>
     <section>
       <article>
