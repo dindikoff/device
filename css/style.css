@@ -126,7 +126,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-menu ul {
+.main-menu li {
   list-style: none;
 }
 
@@ -153,5 +153,21 @@ a {
 }
 
 .user-menu li:active {
+  opacity: 0.3;
+}
+
+.site-navigation > li > a {
+  font-family: 'GilroyBold';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.site-navigation li:hover {
+  opacity: 0.6;
+}
+
+.site-navigation li:active {
   opacity: 0.3;
 }
