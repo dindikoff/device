@@ -51,6 +51,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -73,6 +74,13 @@ a {
    background-color: var(--special-yellow);
  } 
 
+ .logo svg:hover {
+  opacity: 0.6;
+ }
+
+ .logo svg:active {
+  opacity: 0.3;
+ }
 
 .search-field {
   border: none;
@@ -118,6 +126,32 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* .search-top button {
-  display: none;
-} */
+.main-menu ul {
+  list-style: none;
+}
+
+.login,
+.compare,
+.basket {
+  background-repeat: no-repeat;
+}
+
+.login {
+  background-image: url('../img/user.svg');
+}
+
+.compare {
+  background-image: url('../img/compare.svg');
+}
+
+.basket {
+  background-image: url('../img/cart.svg');
+}
+
+.user-menu li:hover {
+  opacity: 0.6;
+}
+
+.user-menu li:active {
+  opacity: 0.3;
+}
