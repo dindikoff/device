@@ -111,6 +111,12 @@ a {
   text-transform: uppercase;
 }
 
+.button-custom {
+  font-family: 'GilroyBold';
+  letter-spacing: 0.2em;
+  line-height: 22px;
+}
+
 .search-button {
   background-color: transparent;
   border: 2px solid var(--basic-black);
@@ -170,4 +176,37 @@ a {
 
 .site-navigation li:active {
   opacity: 0.3;
+}
+
+.sliders {
+  list-style: none;
+}
+
+.slider-header {
+  font-family: 'GilroyBold';
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
+}
+
+.slider-text {
+  line-height: 20px;
+}
+
+.slider-params {
+  list-style: none;
+}
+
+.slider-params-title {
+  font-family: 'GilroyLight';
+  letter-spacing: 0.1em;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.slider-params-text {
+  letter-spacing: 0.1em;
+  font-size: 13px;
+  line-height: 15px;
+  
 }
