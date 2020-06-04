@@ -332,3 +332,30 @@ a {
 .modal {
   display: none;
 }
+
+.breadcrumb-title {
+  font-family: 'GilroyBold';
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumb-item {
+  position: relative;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    background-image: url('../img/nav-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
