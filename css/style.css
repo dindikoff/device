@@ -264,3 +264,15 @@ a {
 .service-loan::before{
   background-image: url('../img/credit.svg');
 }
+
+.brands-list {
+  list-style: none;
+}
+
+.brands-item {
+  opacity: 0.3;
+}
+
+.brands-item:hover {
+  opacity: 1;
+}
