@@ -276,3 +276,17 @@ a {
 .brands-item:hover {
   opacity: 1;
 }
+
+.info h3,
+.main-contact h3 {
+  font-family: 'GilroyBold';
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.info-list {
+  font-family: 'GilroyBold';
+  font-size: 16px;
+  line-height: 28px;
+}
