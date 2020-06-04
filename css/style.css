@@ -1,25 +1,25 @@
 @font-face {
   font-family: 'GilroyLight';
-  src:  url('../fonts/gilroylight.woff2') format('woff2'),
-        url('../fonts/gilroylight.woff') format('woff');
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
 }
 
 @font-face {
   font-family: 'GilroyBold';
-  src:  url('../fonts/gilroyextrabold.woff2') format('woff2'),
-        url('../fonts/gilroyextrabold.woff') format('woff');
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src:  url('../fonts/opensans.woff2') format('woff2'),
-        url('../fonts/opensans.woff') format('woff');
+  src: url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
 }
 
 @font-face {
   font-family: 'OpenSansLight';
-  src:  url('../fonts/opensanslight.woff2') format('woff2'),
-        url('../fonts/opensanslight.woff') format('woff');
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
 }
 
 :root {
@@ -57,31 +57,31 @@ a {
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
-  
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
- .main-header {
-   background-color: var(--special-yellow);
- } 
+.main-header {
+  background-color: var(--special-yellow);
+}
 
- .logo svg:hover {
+.logo svg:hover {
   opacity: 0.6;
- }
+}
 
- .logo svg:active {
+.logo svg:active {
   opacity: 0.3;
- }
+}
 
 .search-field {
   border: none;
@@ -173,7 +173,7 @@ a {
   list-style-type: none;
 }
 
-.site-navigation > li > a {
+.site-navigation>li>a {
   font-family: 'GilroyBold';
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -264,15 +264,15 @@ a {
   background-repeat: no-repeat;
 }
 
-.service-delivery::before{
+.service-delivery::before {
   background-image: url('../img/delivery.svg');
 }
 
-.service-warranty::before{
+.service-warranty::before {
   background-image: url('../img/warranty.svg');
 }
 
-.service-loan::before{
+.service-loan::before {
   background-image: url('../img/credit.svg');
 }
 
@@ -362,15 +362,15 @@ a {
 }
 
 .breadcrumb-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    
-    background-image: url('../img/nav-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+  content: "";
+  position: absolute;
 
-    width: 4px;
-    height: 7px;
+  background-image: url('../img/nav-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 4px;
+  height: 7px;
 }
 
 .sorting-left {
@@ -411,8 +411,7 @@ a {
   opacity: 1;
 }
 
-.sorting-direction-item:first-child .sorting-btn {
-}
+.sorting-direction-item:first-child .sorting-btn {}
 
 .sorting-arrow a {
   display: block;
