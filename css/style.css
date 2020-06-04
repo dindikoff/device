@@ -443,6 +443,10 @@ a {
   height: 20px;
 }
 
+.left-filter {
+  background-color: var(--basic-gray-light);
+}
+
 .filter-section {
   font-size: 14px;
   line-height: 19px;
