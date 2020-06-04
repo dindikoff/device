@@ -154,12 +154,20 @@ a {
   background-image: url('../img/cart.svg');
 }
 
+.user-menu {
+  list-style: none;
+}
+
 .user-menu li:hover {
   opacity: 0.6;
 }
 
 .user-menu li:active {
   opacity: 0.3;
+}
+
+.site-navigation {
+  list-style-type: none;
 }
 
 .site-navigation > li > a {
@@ -289,4 +297,34 @@ a {
   font-family: 'GilroyBold';
   font-size: 16px;
   line-height: 28px;
+}
+
+.main-footer,
+.main-footer a {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.social {
+  list-style-type: none;
+}
+
+.social-item svg {
+  opacity: 0.3;
+}
+
+.social-item svg:hover {
+  opacity: 1;
+}
+
+.social-item svg:active {
+  opacity: 0.1;
+}
+
+.developer img:hover {
+  opacity: 0.6;
+}
+
+.developer img:active {
+  opacity: 0.3;
 }
