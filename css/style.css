@@ -220,3 +220,47 @@ a {
   line-height: 22px;
   letter-spacing: 0.05em;
 }
+
+.services {
+  background-color: var(--basic-gray-light);
+  list-style: none;
+}
+
+.service-navigation,
+.service-list {
+  list-style: none;
+}
+
+.service-title {
+  font-family: 'GilroyBold';
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.service-text {
+  font-family: 'OpenSans';
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  background-repeat: no-repeat;
+}
+
+.service-delivery::before{
+  background-image: url('../img/delivery.svg');
+}
+
+.service-warranty::before{
+  background-image: url('../img/warranty.svg');
+}
+
+.service-loan::before{
+  background-image: url('../img/credit.svg');
+}
