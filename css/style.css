@@ -32,6 +32,7 @@
   --special-yellow: #F7E296;
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
+  --special-gray: #DCDCDC;
 }
 
 body {
@@ -353,9 +354,82 @@ a {
 .breadcrumb-item:not(:last-child)::after {
     content: "";
     position: absolute;
-    width: 4px;
-    height: 7px;
+    
     background-image: url('../img/nav-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
+
+    width: 4px;
+    height: 7px;
+}
+
+.sorting-left {
+  background-color: var(--special-gray);
+}
+
+.header-filter-title {
+  font-family: 'GilroyBold';
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.sorting {
+  background-color: var(--basic-gray-light);
+}
+
+.sorting-list {
+  list-style-type: none;
+}
+
+.sorting-option button {
+  background-color: transparent;
+  border: none;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 19px;
+
+  opacity: 0.3;
+}
+
+.sorting-option button:hover {
+  opacity: 0.6;
+}
+
+.sorting-option button:active {
+  opacity: 1;
+}
+
+.sorting-direction-item:first-child .sorting-btn {
+}
+
+.sorting-arrow a {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.sorting-arrow .active {
+  opacity: 0.2;
+}
+
+.sorting-arrow:hover {
+  opacity: 0.4;
+}
+
+.sorting-arrow:active {
+  opacity: 1;
+}
+
+.sorting-up {
+  background-image: url('../img/icon-up-dir.svg');
+}
+
+.sorting-down {
+  background-image: url('../img/icon-down-dir.svg');
+}
+
+.sorting-btn {
+  width: 20px;
+  height: 20px;
 }

@@ -98,30 +98,34 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="sorting-top">
       <h2 class="visually-hidden">Фильтры каталога</h2>
-      <div>
-        <p>фильтр:</p>
+      <div class="sorting-left">
+        <p class="header-filter-title">фильтр:</p>
       </div>
-      <div>
-        <p>сортировка:</p>
-        <ul>
-          <li>
+      <div class="sorting">
+        <p class="header-filter-title">сортировка:</p>
+        <ul class="sorting-list">
+          <li class="sorting-option">
             <button>По цене</button>
           </li>
-          <li>
+          <li class="sorting-option">
             <button>По типу</button>
           </li>
-          <li>
+          <li class="sorting-option">
             <button>По популярности</button>
           </li>
         </ul>
-        <ul>
-          <li>
-            <button>up</button>
+        <ul class="sorting-list">
+          <li class="sorting-arrow">
+            <a href="#" class="sorting-btn sorting-up active">
+              <span class="visually-hidden">Вверх</span>
+            </a>
           </li>
-          <li>
-            <button>down</button>
+          <li class="sorting-arrow">
+            <a href="#" class="sorting-btn sorting-down">
+              <span class="visually-hidden">Вниз</span>
+            </a>
           </li>
         </ul>
       </div>
