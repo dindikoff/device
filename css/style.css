@@ -139,24 +139,6 @@ a {
   list-style: none;
 }
 
-.login,
-.compare,
-.basket {
-  background-repeat: no-repeat;
-}
-
-.login {
-  background-image: url('../img/user.svg');
-}
-
-.compare {
-  background-image: url('../img/compare.svg');
-}
-
-.basket {
-  background-image: url('../img/cart.svg');
-}
-
 .user-menu {
   list-style: none;
 }
