@@ -208,5 +208,15 @@ a {
   letter-spacing: 0.1em;
   font-size: 13px;
   line-height: 15px;
-  
+}
+
+.popular-list {
+  list-style: none;
+}
+
+.popular-link {
+  font-family: 'GilroyBold';
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
 }
