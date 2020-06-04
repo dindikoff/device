@@ -353,6 +353,14 @@ a {
   opacity: 0.3;
 }
 
+.breadcrumb-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumb-item:active {
+  opacity: 1;
+}
+
 .breadcrumb-item:not(:last-child)::after {
     content: "";
     position: absolute;
