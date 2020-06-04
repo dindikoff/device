@@ -328,3 +328,7 @@ a {
 .developer img:active {
   opacity: 0.3;
 }
+
+.modal {
+  display: none;
+}
