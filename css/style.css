@@ -110,6 +110,8 @@ a {
 
 .button {
   text-transform: uppercase;
+  background: transparent;
+  border: none;
 }
 
 .button-custom {
@@ -432,4 +434,43 @@ a {
 .sorting-btn {
   width: 20px;
   height: 20px;
+}
+
+.filter-section {
+  font-size: 14px;
+  line-height: 19px;
+  border: none;
+}
+
+.filter-section-list {
+  list-style-type: none;
+}
+
+.filter-section legend {
+  font-family: 'GilroyBold';
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 17px;
+
+  border-top: 2px solid var(--basic-black);
+}
+
+.catalog-modal {
+  display: none;
+}
+
+.main-catalog {
+  font-family: 'GilroyLight';
+  letter-spacing: 0.05em;
+}
+
+.catalog-item-title {
+  font-family: 'GilroyBold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.catalog-item-price {
+  font-size: 16px;
+  line-height: 18px;
 }
