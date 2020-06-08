@@ -80,6 +80,10 @@ a {
   overflow: hidden;
 }
 
+.button {
+  display: block;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -324,18 +328,66 @@ a {
   opacity: 1;
 }
 
+.about-us .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 127px;
+  margin-bottom: 80px;
+}
+
+.info {
+  /* width: 473px; */
+  width: 493px;
+}
+
+.info .button,
+.main-contact .button {
+  margin-top: 84px;
+}
+
+.main-contact {
+  width: 560px;
+}
+
 .info h3,
 .main-contact h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
 }
 
+.info p,
+.main-contact p {
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
 .info-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 24px;
+  margin-top: 46px;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   font-size: 16px;
   line-height: 28px;
+}
+
+.info-list li {
+  margin-bottom: 20px;
+}
+
+.info-list li:last-child {
+  margin-bottom: 0px;
 }
 
 .main-footer,
