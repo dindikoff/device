@@ -64,6 +64,10 @@ a {
   color: var(--basic-black);
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
