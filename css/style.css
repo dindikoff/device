@@ -200,8 +200,18 @@ a {
   list-style-type: none;
 }
 
-.top-navigation li:first-child {
-  width: 540px;
+.sub-menu {
+  display: flex;
+  margin-top: 30px;
+}
+
+.sub-menu-list {
+  padding: 0;
+  margin-left: 61px;
+}
+
+.sub-menu-list:first-child {
+  margin-left: 0;
 }
 
 .top-navigation > li:nth-child(2) {
@@ -497,20 +507,34 @@ a {
 }
 
 .breadcrumb-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 44px;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   font-size: 47px;
   line-height: 58px;
 }
 
 .breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+
   list-style: none;
 }
 
 .breadcrumb-item {
   position: relative;
+  margin-left: 40px;
   font-size: 14px;
   line-height: 19px;
   opacity: 0.3;
+}
+
+.breadcrumb-item:first-child {
+  margin-left: 0;
 }
 
 .breadcrumb-item:hover {
@@ -524,7 +548,8 @@ a {
 .breadcrumb-item:not(:last-child)::after {
   content: "";
   position: absolute;
-
+  top: 7px;
+  right: -22px;
   background-image: url('../img/nav-arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
