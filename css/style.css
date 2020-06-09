@@ -629,6 +629,10 @@ a {
 }
 
 .left-filter {
+  position: relative;
+  display: flex;
+  width: 268px;
+  padding-right: 68px;
   background-color: var(--basic-gray-light);
 }
 
@@ -651,13 +655,25 @@ a {
   border-top: 2px solid var(--basic-black);
 }
 
+.catalog-wrapper {
+  display: flex;
+}
+
 .catalog-modal {
   display: none;
 }
 
 .main-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 876px;
+  padding-left: 72px;
   font-family: 'GilroyLight', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   letter-spacing: 0.05em;
+}
+
+.catalog-item {
+  width: 360px;
 }
 
 .catalog-item-title {
