@@ -301,7 +301,14 @@ a {
   line-height: 15px;
 }
 
+.popular {
+
+  margin-top: 76px;
+}
+
 .popular-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   list-style: none;
 }
 
