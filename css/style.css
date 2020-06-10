@@ -645,10 +645,17 @@ a {
 }
 
 .sorting {
+  display: flex;
   background-color: var(--basic-gray-light);
 }
 
+.sorting-top {
+  display: grid;
+  grid-template-columns: 268px 1fr;
+}
+
 .sorting-list {
+  display: flex;
   list-style-type: none;
 }
 
@@ -675,6 +682,10 @@ a {
 .sorting-arrow a {
   display: block;
   background-repeat: no-repeat;
+}
+
+.sorting-list--arrow {
+  margin-left: auto;
 }
 
 .sorting-arrow .active {
@@ -730,7 +741,8 @@ a {
 }
 
 .catalog-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 267px 1fr;
 }
 
 .catalog-modal {
