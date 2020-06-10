@@ -307,6 +307,8 @@ a {
 }
 
 .popular-list {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   list-style: none;
@@ -320,13 +322,31 @@ a {
 }
 
 .services {
+  margin-top: 49px;
   background-color: var(--basic-gray-light);
   list-style: none;
+}
+
+.services .container {
+  display: flex;
 }
 
 .service-navigation,
 .service-list {
   list-style: none;
+}
+
+.service-navigation {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-content: center;
+  gap: 30px;
+}
+
+.service-list {
+  width: 560px;
+  margin-left: 116px;
 }
 
 .service-title {
@@ -349,6 +369,14 @@ a {
   width: 190px;
   height: 190px;
   background-repeat: no-repeat;
+}
+
+.service-item {
+  display: none;
+}
+
+.service-item--active {
+  display: block;
 }
 
 .service-delivery::before {
