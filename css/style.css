@@ -750,8 +750,8 @@ a {
 }
 
 .main-catalog {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   width: 876px;
   padding-left: 72px;
   font-family: 'GilroyLight', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
@@ -759,7 +759,13 @@ a {
 }
 
 .catalog-item {
+  margin-right: 40px;
   width: 360px;
+}
+
+.catalog-items-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .catalog-item-title {
@@ -774,6 +780,12 @@ a {
 }
 
 .pagination {
+  display: flex;
+  width: 100%;
+  padding: 30px 25px;
+  margin-top: 40px;
+  margin-bottom: 78px;
+  justify-content: center;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
@@ -781,6 +793,14 @@ a {
   letter-spacing: 0.1em;
 
   background-color: var(--special-gray-light);
+}
+
+.pagination-back {
+  margin-right: auto;
+}
+
+.pagination-next {
+  margin-left: auto;
 }
 
 .pagination-control:hover {
@@ -792,7 +812,18 @@ a {
 } 
 
 .pagination-list {
+  margin:0;
+  padding: 0;
+  display: flex;
   list-style: none;
+}
+
+.pagination-list li {
+  margin-right: 30px;
+}
+
+.pagination-list li:last-child {
+  margin-right: 0;
 }
 
 .pagination-item:not(.active) {
