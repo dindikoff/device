@@ -392,6 +392,11 @@ a {
 }
 
 .brands-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
 }
 
@@ -401,6 +406,10 @@ a {
 
 .brands-item:hover {
   opacity: 1;
+}
+
+.about-us {
+  margin-top: 90px;
 }
 
 .about-us .container{
