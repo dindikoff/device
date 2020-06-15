@@ -88,7 +88,24 @@ a {
 }
 
 .button {
+  position: relative;
   display: block;
+  width: 220px;
+  padding-left: 44px;
+  padding-right: 44px;
+  text-align: center;
+  z-index: 2;
+}
+
+.button::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 99%;
+  height: 8px;
+  left: 0;
+  top: 7px;
+  background-color: var(--special-yellow-dark);
 }
 
 .container {
@@ -162,9 +179,13 @@ a {
 }
 
 .button-custom {
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: 'GilroyBold';
+  font-size: 18px;
   letter-spacing: 0.2em;
   line-height: 22px;
+  width: 264px;
 }
 
 .search-button {
@@ -475,7 +496,7 @@ a {
 
 .info .button,
 .main-contact .button {
-  margin-top: 84px;
+  margin-top: 77px;
 }
 
 .main-contact {
@@ -547,7 +568,7 @@ a {
 
 .user-menu--footer {
   margin-left: auto;
-  margin-top: 42px;
+  margin-top: 47px;
 }
 
 .user-menu--footer li {
@@ -588,7 +609,7 @@ a {
 }
 
 .main-footer .logo {
-  margin-top: 63px;
+  margin-top: 70px;
 }
 
 .main-footer,
