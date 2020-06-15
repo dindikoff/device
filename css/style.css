@@ -109,7 +109,7 @@ a {
 }
 
 .container {
-  width: 1160px;
+  width: 1152px;
   margin: 0 auto;
 }
 
@@ -117,8 +117,8 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  padding-left: 62px;
-  padding-right: 53px;
+  padding-left: 58px;
+  padding-right: 49px;
   background-color: var(--special-yellow);
 }
 
@@ -555,7 +555,7 @@ li.user-menu-card--basket {
 }
 
 .about-us {
-  margin-top: 90px;
+  margin-top: 92px;
 }
 
 .about-us .container{
@@ -634,6 +634,7 @@ li.user-menu-card--basket {
 .main-footer {
   display: flex;
   flex-direction: column;
+  padding-left: 13px;
 }
 
 .logo-and-menu-wrapper {
@@ -643,13 +644,44 @@ li.user-menu-card--basket {
 
 .user-menu--footer {
   margin-left: auto;
+  width: 336px;
   margin-top: 47px;
+}
+
+.user-menu-item--login,
+.user-menu-item--chart {
+  position: relative;
 }
 
 .user-menu--footer li {
   width: auto;
-  margin-left: 33px;
+  margin-left: 35px;
 }
+
+.user-menu--footer li:first-child {
+  margin: 0;
+}
+
+.user-menu--footer li::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icon_user--yellow.svg');
+  background-repeat: no-repeat;
+  background-position: 5px 9px;
+}
+
+.user-menu--footer li:nth-child(2)::before {
+  background-image: url('../img/icon-chart--yellow.svg');
+  background-position: 8px 12px;
+}
+
+.user-menu--footer li:nth-child(3)::before {
+  background-image: url('../img/icon-basket--yellow.svg');
+  background-position: 8px 10px;
+}
+
 
 .address-and-menu-wrapper {
   display: flex;
@@ -668,6 +700,10 @@ li.user-menu-card--basket {
   justify-content: center;
 }
 
+.main-footer .container {
+  width: 1165px;
+}
+
 .main-footer .site-navigation li {
   margin-left: 34px;
 }
@@ -677,10 +713,10 @@ li.user-menu-card--basket {
 }
 
 .main-footer .footer-tel {
-  width: 200px;
+  width: 189px;
   text-align: right;
   display: block;
-  margin-left: auto;
+  margin-left: 50px;
 }
 
 .main-footer .logo {
@@ -733,7 +769,7 @@ li.user-menu-card--basket {
 }
 
 .developer {
-  margin-left: auto;
+  margin-left: 93px;
   padding-top: 14px;
 }
 
