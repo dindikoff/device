@@ -42,6 +42,7 @@ html {
 }
 
 body {
+  position: relative;
   min-height: 100%;
   min-width: 1180px;
   display: grid;
@@ -620,8 +621,37 @@ a {
 }
 
 .modal {
+  position: fixed;
   display: none;
 }
+
+.modal-map {
+  z-index: 2;
+  justify-content: center;
+  width: 994px;
+  min-height: 554px;
+  left: 50%;
+  top: 50%;
+  margin-left: -497px;
+  margin-top: -277px;
+
+  
+}
+
+.modal button {
+  cursor: pointer;
+  position: absolute;
+  border: 0;
+  font-size: 0;
+  right: 30px;
+  top: 30px;
+
+  width: 55px;
+  height: 55px;
+  background-image: url('../img/modal-close.svg');
+}
+
+
 
 .breadcrumb-title {
   margin: 0;
