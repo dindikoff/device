@@ -36,6 +36,7 @@
   --special-gray-light: #EBEBEB;
   --special-hover-gray: #D9D9D9;
   --special-input: #F2F2F2;
+  --decoration-line: #FFC600;
 }
 
 html {
@@ -263,7 +264,7 @@ a {
 
 .top-navigation > li:nth-child(2) {
   margin-left: 347px;
-  margin-right: 38px;
+  margin-right: 35px;
 }
 
 .top-navigation > li:last-child {
@@ -483,6 +484,7 @@ a {
 
 .info h3,
 .main-contact h3 {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-top: 50px;
@@ -491,6 +493,17 @@ a {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+}
+
+.info h3::before,
+.main-contact h3::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 7px;
+
+  top: -57px;
+  background-color: var(--basic-black);
 }
 
 .info p,
@@ -584,21 +597,27 @@ a {
   color: var(--basic-white);
 }
 
-.social {
-  
+.decoration-line {
+  width: 80px;
+  height: 7px;
+  margin-top: 27px;
+  background-color: var(--decoration-line);
+}
+
+.social { 
   display: flex;
-  width: 100%;
+  width: 960px;
   justify-content: center;
   list-style-type: none;
 }
 
 .social-wrapper {
-  margin-top: 67px;
+  margin-top: 49px;
   display: flex;
 }
 
 .social-item {
-  margin-left: 20px;
+  margin-left: 19px;
 }
 
 .social-item:first-child {
@@ -619,6 +638,7 @@ a {
 
 .developer {
   margin-left: auto;
+  padding-top: 14px;
 }
 
 .developer img:hover {
