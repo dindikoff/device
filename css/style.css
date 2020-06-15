@@ -106,7 +106,7 @@ a {
 
 .main-header .logo {
   margin-top: -20px;
-  margin-bottom: 29px;
+  margin-bottom: 17px;
 }
 
 .logo svg:hover {
@@ -129,8 +129,7 @@ a {
   background-image: url('../img/search.svg');
   background-repeat: no-repeat;
   background-position: 0;
-  padding: 14px;
-  padding-left: 30px;
+  padding-left: 38px;
   background-color: transparent;
 }
 
@@ -189,24 +188,27 @@ a {
 }
 
 .user-menu {
-  width: 190px;
   display: flex;
+  
   margin: 0;
   padding: 0;
+  margin-left: 70px;
   list-style: none;
 }
 
 .user-menu li {
-  padding-left: 42px;
+  width: 160px;
+  padding-left: 7px;
 }
 
-.user-menu-card {
-  width: 280px;
+.user-menu-card li {
+  width: auto;
+  padding-left: 40px;
 }
 
 .user-menu-wrap {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
   justify-content: space-between;
 }
 
@@ -219,7 +221,7 @@ a {
 }
 
 .user-menu svg {
-  margin-right: 13px;
+  margin-right: 7px;
 }
 
 .site-navigation {
@@ -244,16 +246,12 @@ a {
   margin-left: 0;
 }
 
-.top-navigation--first{
-  position: relative;
-}
-
 .top-navigation--first::before {
   content: '';
   position: absolute;
   width: 15.4px;
   height: 15.4px;
-  right: -30px;
+  right: -33px;
   top: 3px;
   background-image: url('../img/plus.svg');
   opacity: 0.3;
@@ -264,7 +262,7 @@ a {
 }
 
 .top-navigation > li:nth-child(2) {
-  margin-left: auto;
+  margin-left: 347px;
   margin-right: 38px;
 }
 
@@ -275,9 +273,14 @@ a {
 .site-navigation>li>a {
   font-family: 'GilroyBold';
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   font-size: 18px;
   line-height: 22px;
+}
+
+.site-navigation>li>.top-navigation--first{
+  position: relative;
+  letter-spacing: 0.1em;
 }
 
 .site-navigation li:hover {
@@ -441,7 +444,8 @@ a {
   padding: 0;
   margin-top: 90px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 260px 260px 260px 260px;
+  gap: 40px;
   list-style: none;
 }
 
@@ -465,8 +469,7 @@ a {
 }
 
 .info {
-  /* width: 473px; */
-  width: 493px;
+  width: 473px;
 }
 
 .info .button,
@@ -483,7 +486,7 @@ a {
   margin: 0;
   padding: 0;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   font-size: 47px;
   line-height: 58px;
@@ -492,7 +495,7 @@ a {
 
 .info p,
 .main-contact p {
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 28px;
   font-style: normal;
@@ -504,15 +507,15 @@ a {
 .info-list {
   margin: 0;
   padding: 0;
-  margin-left: 24px;
-  margin-top: 46px;
+  margin-left: 32px;
+  margin-top: 60px;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   font-size: 16px;
   line-height: 28px;
 }
 
 .info-list li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .info-list li:last-child {
@@ -526,7 +529,7 @@ a {
 
 .logo-and-menu-wrapper {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .main-footer .user-menu {
@@ -540,6 +543,7 @@ a {
 }
 
 .footer-address {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
   padding: 0;
   margin: 0;
   width: 240px;
@@ -547,12 +551,12 @@ a {
 
 .main-footer .site-navigation {
   flex-wrap: wrap;
-  width: 800px;
+  width: 682px;
   justify-content: center;
 }
 
 .main-footer .site-navigation li {
-  margin-left: 36px;
+  margin-left: 34px;
 }
 
 .main-footer .site-navigation li:first-child {
@@ -567,7 +571,7 @@ a {
 }
 
 .main-footer .logo {
-  margin-top: 60px;
+  margin-top: 63px;
 }
 
 .main-footer,
@@ -671,6 +675,10 @@ a {
 
 .modal .button--close:active {
   opacity: 0.7;
+}
+
+.modal-form {
+  display: none;
 }
 
 .modal-form form {
