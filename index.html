@@ -400,27 +400,31 @@
   </section>
 
   <section class="modal modal-form">
+    <div class="container">
     <h3 class="visually-hidden">Форма обратной свзяи</h3>
     <form action="https://echo.htmlacademy.ru" method="POST" name="write-us">
+      <div class="first-block">
       <p>
-        <label for="name-field">Ваше имя:</label>
+        <label for="name-field">Ваше имя:</label> <br>
         <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label for="email-field">Ваш e-mail:</label>
+        <label for="email-field">Ваш e-mail:</label> <br>
         <input type="email" name="email" id="email-field" placeholder="email@example.com">
       </p>
-
+    </div>
       <p>
-        <label for="letter-field">Текст письма:</label>
+        <label for="letter-field">Текст письма:</label> <br>
         <textarea name="letter" id="letter-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <p>
-        <button type="submit">отправить</button>
+        <button class="button modal-button" type="submit">отправить</button>
       </p>
     </form>
-    <button type="button" aria-label="Закрыть окно">X</button>
+    <button class="button--close" type="button" aria-label="Закрыть окно">X</button>
+  </div>
   </section>
+  
 </body>
 
 </html>
