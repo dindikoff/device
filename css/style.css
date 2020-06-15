@@ -532,10 +532,14 @@ a {
   margin-bottom: 28px;
 }
 
-.main-footer .user-menu {
-  width: auto;
+.user-menu--footer {
   margin-left: auto;
-  margin-top: 46px;
+  margin-top: 42px;
+}
+
+.user-menu--footer li {
+  width: auto;
+  margin-left: 33px;
 }
 
 .address-and-menu-wrapper {
