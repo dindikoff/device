@@ -334,6 +334,10 @@ li.user-menu-card--basket {
   list-style-type: none;
 }
 
+.top-navigation li:nth-child(1):hover .sub-menu {
+  display: flex;
+}
+
 .sub-menu {
   display: none;
   width: 540px;
@@ -364,6 +368,8 @@ li.user-menu-card--basket {
 .top-navigation--first span {
   position: relative;
 }
+
+
 
 .top-navigation--first span::before {
   content: '';
