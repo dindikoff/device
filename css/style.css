@@ -664,6 +664,15 @@ li.user-menu-card--basket {
   padding-left: 13px;
 }
 
+.inner-html .main-footer .container {
+  width: 1172px;
+  padding: 0;
+}
+
+.inner-html .main-footer .logo {
+  margin-top: 60px;
+}
+
 .logo-and-menu-wrapper {
   display: flex;
   margin-bottom: 28px;
@@ -675,6 +684,42 @@ li.user-menu-card--basket {
   margin-top: 47px;
 }
 
+.inner-html .user-menu--footer {
+  width: auto;
+  margin-top: 38px;
+}
+
+.inner-html .footer-second-menu {
+  width: 500px;
+  display: flex;
+  margin-left: auto;
+}
+
+.inner-html .user-login--footer .logout a {
+  margin-left: 0;
+  padding: 0;
+}
+
+.footer-second-menu ul {
+  margin-left: 38px;
+}
+
+.inner-html .user-shop--footer {
+  margin-left: 41px;
+}
+
+.inner-html .user-shop--footer li:first-child {
+  margin-left: -9px;
+}
+
+.inner-html .user-shop--footer li:last-child {
+  margin-left: 35px;
+}
+
+.footer-second-menu ul:first-child {
+  margin-left: 4px;
+}
+
 .user-menu-item--login,
 .user-menu-item--chart {
   position: relative;
@@ -682,14 +727,14 @@ li.user-menu-card--basket {
 
 .user-menu--footer li {
   width: auto;
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
 .user-menu--footer li:first-child {
   margin: 0;
 }
 
-.user-menu--footer li::before {
+.user-menu--footer .user-menu-item--login::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -699,16 +744,25 @@ li.user-menu-card--basket {
   background-position: 5px 9px;
 }
 
-.user-menu--footer li:nth-child(2)::before {
+.user-menu--footer .user-menu-item--chart::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
   background-image: url('../img/icon-chart--yellow.svg');
   background-position: 8px 12px;
 }
 
-.user-menu--footer li:nth-child(3)::before {
+.user-menu--footer .user-menu-item--basket::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
   background-image: url('../img/icon-basket--yellow.svg');
   background-position: 8px 10px;
 }
-
 
 .address-and-menu-wrapper {
   display: flex;
