@@ -783,31 +783,32 @@ li.user-menu-card--basket {
 
 .modal {
   position: fixed;
-  display: none;
+  display: block;
   left: 50%;
   top: 50%;
   justify-content: center;
 }
 
 .modal-map {
+  display: none;
   z-index: 2;
   width: 994px;
   min-height: 554px;
  
   margin-left: -497px;
   margin-top: -277px;
-
-  
 }
 
 .modal-form {
-  display: flex;
+  display: none;
+  z-index: 2;
   width: 960px;
   min-height: 550px;
   margin-left: -480px;
   margin-top: -275px;
 
   background-color: var(--basic-white);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 .modal .button--close {
@@ -815,7 +816,7 @@ li.user-menu-card--basket {
   position: absolute;
   border: 0;
   font-size: 0;
-  right: 30px;
+  right: 35px;
   top: 30px;
 
   width: 55px;
@@ -823,6 +824,11 @@ li.user-menu-card--basket {
   background-image: url('../img/modal-close.svg');
   background-color: transparent;
   opacity: 0.3;
+}
+
+.modal-form .button--close {
+  top: 20px;
+  right: 20px;
 }
 
 .modal .button--close:hover {
@@ -833,15 +839,13 @@ li.user-menu-card--basket {
   opacity: 0.7;
 }
 
-.modal-form {
-  display: none;
-}
-
 .modal-form form {
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 92px;
 }
 
 .modal-form .first-block {
@@ -858,10 +862,32 @@ li.user-menu-card--basket {
 
 .modal-form input,
 .modal-form textarea {
-  padding: 16px 20px;
+  padding: 25px 20px;
   width: 100%;
   border: 0;
   background-color: var(--special-input);
+}
+
+.modal-form input {
+  margin-top: 5px;
+  height: 20px;
+}
+
+.modal-form textarea {
+  height: 172px;
+  font-size: 14px;
+  margin-top: 5px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.modal-form input::placeholder {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-letter {
+  margin-top: 15px;
 }
 
 .modal-form .container {
@@ -874,6 +900,14 @@ li.user-menu-card--basket {
 }
 
 .modal-button {
+  margin-top: 15px;
+  width: 200px;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'GilroyBold';
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
   border: 0;
   background:transparent;
 }
