@@ -586,6 +586,7 @@ li.user-menu-card--basket {
 }
 
 .slider-navigation {
+  z-index: 1;
   display: flex;
   width: 112px;
   position: absolute;
