@@ -1223,6 +1223,21 @@ li.user-menu-card--basket {
   width: 360px;
 }
 
+.catalog-item--new {
+  position: relative;
+}
+
+.catalog-item--new::before {
+  content: '';
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background-image: url('../img/new-icon.png');
+  background-repeat: no-repeat;
+  top: 28px;
+  right: 26px;
+}
+
 .catalog-items-list {
   display: grid;
   grid-template-columns: 360px 360px;
