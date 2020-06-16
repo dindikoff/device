@@ -729,6 +729,10 @@ li.user-menu-card--basket {
 
 .user-menu--footer li {
   width: auto;
+  margin-left: 35px;
+}
+
+.inner-html .user-menu--footer li {
   margin-left: 25px;
 }
 
