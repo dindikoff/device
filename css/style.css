@@ -109,6 +109,15 @@ a {
   background-color: var(--special-yellow-dark);
 }
 
+.button:hover::before {
+  height: 40px;
+  top: -8px;
+}
+
+.button:active {
+  color: rgba(255, 0, 0, 0.3);
+}
+
 .container {
   width: 1152px;
   margin: 0 auto;
