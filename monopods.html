@@ -103,12 +103,12 @@
       </ul>
     </div>
     </section>
-    <section class="sorting-top container">
+    <section class="sorting-top">
       <h2 class="visually-hidden">Фильтры каталога</h2>
-      <div class="sorting-left">
+      <div class="sorting-left column">
         <p class="header-filter-title">фильтр:</p>
       </div>
-      <div class="sorting">
+      <div class="sorting column">
         <p class="header-filter-title">сортировка:</p>
         <ul class="sorting-list">
           <li class="sorting-option">
@@ -135,8 +135,8 @@
         </ul>
       </div>
     </section>
-    <div class="catalog-wrapper container">
-    <aside class="left-filter">
+    <div class="catalog">
+    <aside class="left-filter column">
       <form action="https://echo.htmlacademy.ru" method="POST" name="search-filter" class="search-filter">
         <fieldset class="filter-section">
           <legend>Стоимость</legend>
@@ -185,7 +185,7 @@
         <button type="submit" class="button button-custom">Показать</button>
         </form>
     </aside>
-    <section class="main-catalog">
+    <section class="main-catalog column">
       <div class="catalog-items-list">
       <h3 class="visually-hidden">Список товаров</h3>
       <article class="catalog-item">
@@ -194,8 +194,10 @@
           <a href="#" class="catalog-item-add-to-card">в корзину</a>
           <a href="#" class="catalog-item-compare">Добавить к сравнению</a>
         </div>
+        <div class="catalog-item--desc">
         <a href="#" class="catalog-item-title">Любительская селфи-палка </a>
         <span class="catalog-item-price">500 руб.</span>
+      </div>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/item-2.png" width="360" height="380" alt="Профессиональная 
@@ -204,8 +206,10 @@
           <a href="#" class="catalog-item-add-to-card">в корзину</a>
           <a href="#" class="catalog-item-compare">Добавить к сравнению</a>
         </div>
-        <a href="#" class="catalog-item-title">Профессиональная селфи-палка </a>
-        <span class="catalog-item-price">1500 руб.</span>
+        <div class="catalog-item--desc">
+        <a href="#" class="catalog-item-title">Профессиональная <br> селфи-палка </a>
+        <span class="catalog-item-price">1 500 руб.</span>
+        </div>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/item-3.png" width="360" height="380" alt="Профессиональная 
@@ -214,8 +218,10 @@
           <a href="#" class="catalog-item-add-to-card">в корзину</a>
           <a href="#" class="catalog-item-compare">Добавить к сравнению</a>
         </div>
-        <a href="#" class="catalog-item-title">Профессиональная селфи-палка </a>
-        <span class="catalog-item-price">2500 руб.</span>
+        <div class="catalog-item--desc">
+        <a href="#" class="catalog-item-title">Непотопляемая селфи-палка </a>
+        <span class="catalog-item-price">2 500 руб.</span>
+        </div>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
@@ -223,8 +229,10 @@
           <a href="#" class="catalog-item-add-to-card">в корзину</a>
           <a href="#" class="catalog-item-compare">Добавить к сравнению</a>
         </div>
+        <div class="catalog-item--desc">
         <a href="#" class="catalog-item-title">Селфи-палка «Следуй за мной» </a>
-        <span class="catalog-item-price">4900 руб.</span>
+        <span class="catalog-item-price">4 900 руб.</span>
+        </div>
       </article>
     </div>
       <section class="pagination">
@@ -243,7 +251,7 @@
         <a href="#" class="pagination-control pagination-next">вперед</a>
       </section>
     </section>
-  </div>
+</div>
   </main>
   <footer class="main-footer">
     <div class="logo-and-menu-wrapper container">
