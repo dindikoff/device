@@ -1469,6 +1469,7 @@ a.slider-navigation--active::before {
 }
 
 .filter-section {
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 19px;
   border: none;
@@ -1615,4 +1616,55 @@ a.slider-navigation--active::before {
 
 .pagination-item:not(.active) {
   opacity: 0.3;
+}
+
+.range-controls {
+  position: relative;
+  padding-top: 34px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: red;
+}
+
+.range-controls .pin {
+  position: absolute;
+  top: 24px;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .pin-min {
+  left: 0;
+}
+
+.range-controls .pin-max {
+  left: 114px;
+}
+
+.price-controls {
+  font-family: 'GilroyLight', 'Aruial', sans-serif;
+  width: 200px;
+}
+
+.price-controls input {
+  width: 75px;
+  background-color: transparent;
+  border: 0;
 }

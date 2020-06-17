@@ -140,7 +140,23 @@
       <form action="https://echo.htmlacademy.ru" method="POST" name="search-filter" class="search-filter">
         <fieldset class="filter-section">
           <legend>Стоимость</legend>
-          <!-- Я не знаю как это верстать! -->
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="pin pin-min"></div>
+              <div class="pin pin-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="5000">
+              </label>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="filter-section">
