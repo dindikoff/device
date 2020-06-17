@@ -135,8 +135,8 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  padding-left: 58px;
-  padding-right: 49px;
+  padding-left: 54px;
+  padding-right: 54px;
   background-color: var(--special-yellow);
 }
 
@@ -435,7 +435,7 @@ li.user-menu-card--basket {
   position: relative;
   list-style: none;
   margin-top: -108px;
-  margin-left: 37px;
+  margin-left: 32px;
 }
 
 .slider-item img {
@@ -480,7 +480,7 @@ li.user-menu-card--basket {
   position: relative;
   z-index: 1;
   margin-top: 69px;
-  width: 552px;
+  width: 556px;
 }
 
 .slider-content::before {
@@ -500,7 +500,7 @@ li.user-menu-card--basket {
   background-image: url('../img/01.png');
   background-repeat: no-repeat;
   top: -66px;
-  right: 35px;
+  right: 38px;
 }
 
 .slider-item:nth-child(2) .slider-content::after {
@@ -590,7 +590,7 @@ li.user-menu-card--basket {
   display: flex;
   width: 112px;
   position: absolute;
-  right: 224px;
+  right: 228px;
   top: 536px;
   justify-content: space-between;
   list-style: none;
@@ -626,9 +626,10 @@ a.slider-navigation--active::before {
 }
 
 .popular-item {
-  margin-left: 25px;
+  margin-left: 21px;
   padding-top: 193px;
 }
+
 
 .popular-item a {
   position: relative;
@@ -656,7 +657,7 @@ a.slider-navigation--active::before {
   width: 97px;
   height: 55px;
   top: -123px;
-  right: 47px;
+  right: 51px;
 }
 
 .popular-item:nth-child(2) a::after {
@@ -664,7 +665,7 @@ a.slider-navigation--active::before {
   width: 85.87px;
   height: 117px;
   top: -149px;
-  right: 53px;
+  right: 56px;
 }
 
 .popular-item:nth-child(3) a::after {
@@ -672,7 +673,7 @@ a.slider-navigation--active::before {
   width: 85.87px;
   height: 117px;
   top: -139px;
-  right: 46px;
+  right: 50px;
 }
 
 .popular-item:nth-child(4) a::after {
@@ -680,7 +681,7 @@ a.slider-navigation--active::before {
   width: 107.31px;
   height: 64.99px;
   top: -127px;
-  right: 42px;
+  right: 46px;
 }
 
 .popular-item:nth-child(5) a::after {
@@ -688,7 +689,7 @@ a.slider-navigation--active::before {
   width: 56.01px;
   height: 97.98px;
   top: -144px;
-  right: 69px;
+  right: 73px;
 }
 
 .popular-item:nth-child(6) a::after {
@@ -696,7 +697,7 @@ a.slider-navigation--active::before {
   width: 132.03px;
   height: 69.01px;
   top: -130px;
-  right: 32px;
+  right: 36px;
 }
 
 .popular-list {
