@@ -27,6 +27,7 @@
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-gray: #464646;
+  --basic-red: red;
   --basic-half-gray: #7E7E7E;
   --basic-gray-light: #E5E5E5;
   --special-yellow: #F7E296;
@@ -37,6 +38,8 @@
   --special-hover-gray: #D9D9D9;
   --special-input: #F2F2F2;
   --decoration-line: #FFC600;
+  --special-gray-second: #dbdbdb;
+  --alternative-gray: #ababab;
 }
 
 html {
@@ -1272,7 +1275,7 @@ a.slider-navigation--active::before {
   width: 200px;
   padding: 0;
   cursor: pointer;
-  font-family: 'GilroyBold';
+  font-family: 'GilroyBold', 'Arial', sans-serif;
   font-size: 18px;
   letter-spacing: 0.2em;
   font-weight: bold;
@@ -1629,13 +1632,13 @@ a.slider-navigation--active::before {
 
 .range-controls .scale {
   height: 2px;
-  background-color: #dbdbdb;
+  background-color: var(--special-gray-second);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background-color: red;
+  background-color: var(--basic-red);
 }
 
 .range-controls .pin {
@@ -1644,8 +1647,8 @@ a.slider-navigation--active::before {
   width: 20px;
   height: 20px;
   padding: 2px;
-  background-color: #ababab;
-  border: 8px solid #ffffff;
+  background-color: var(--alternative-gray);
+  border: 8px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1659,7 +1662,7 @@ a.slider-navigation--active::before {
 }
 
 .price-controls {
-  font-family: 'GilroyLight', 'Aruial', sans-serif;
+  font-family: 'GilroyLight', 'Arial', sans-serif;
   width: 200px;
 }
 
