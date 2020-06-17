@@ -619,6 +619,7 @@ a.slider-navigation--active::before {
 
 .popular {
   margin-top: 76px;
+  margin-bottom: 184px;
 }
 
 .popular .container {
@@ -717,12 +718,34 @@ a.slider-navigation--active::before {
 
 .services {
   margin-top: 49px;
+  min-height: 288px;
   background-color: var(--basic-gray-light);
   list-style: none;
 }
 
+.services .button-service {
+  width: 160px;
+}
+
+.services .button-service--active {
+  width: 280px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 18px;
+  text-align: left;
+  background-color: var(--basic-black);
+  color: var(--special-yellow);
+}
+
+.button-service--active::before {
+  display: none;
+}
+
 .services .container {
   display: flex;
+  position: relative;
+  top: -89px;
+  left: -3px;
 }
 
 .service-navigation,
@@ -731,19 +754,46 @@ a.slider-navigation--active::before {
 }
 
 .service-navigation {
+  position: relative;
   margin: 0;
   padding: 0;
-  display: grid;
+  margin-top: 68px;
+  display: flex;
+  flex-direction: column;
   align-content: center;
-  gap: 30px;
+}
+
+.service-navigation-item {
+  margin-top: 32px;
+}
+
+.service-navigation-item:first-child {
+  margin-top: 0px;
+}
+
+.service-navigation-item:last-child {
+  margin-top: 39px;
+}
+
+.service-navigation::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 320px;
+  background-color: var(--basic-black);
+
+  right: -3px;
+  top: -78px;
 }
 
 .service-list {
-  width: 560px;
-  margin-left: 116px;
+  /* width: 560px; */
+  width:611px;
+  margin-left: 79px;
 }
 
 .service-title {
+  margin-bottom: 39px;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   font-size: 47px;
   line-height: 58px;
@@ -751,7 +801,7 @@ a.slider-navigation--active::before {
 }
 
 .service-text {
-  font-family: 'OpenSans';
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 0.1em;
@@ -775,14 +825,20 @@ a.slider-navigation--active::before {
 
 .service-delivery::before {
   background-image: url('../img/delivery.svg');
+  right: -58px;
+  top: 60px;
 }
 
 .service-warranty::before {
   background-image: url('../img/warranty.svg');
+  right: -41px;
+  top: 41px;
 }
 
 .service-loan::before {
   background-image: url('../img/credit.svg');
+  right: -33px;
+  top: 38px;
 }
 
 .brands-list {
