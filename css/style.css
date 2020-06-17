@@ -841,6 +841,10 @@ a.slider-navigation--active::before {
   top: 38px;
 }
 
+.brands .container {
+  width: 1160px;
+}
+
 .brands-list {
   margin: 0;
   padding: 0;
@@ -860,10 +864,11 @@ a.slider-navigation--active::before {
 }
 
 .about-us {
-  margin-top: 92px;
+  margin-top: 90px;
 }
 
 .about-us .container{
+  width: 1160px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 127px;
@@ -958,7 +963,7 @@ a.slider-navigation--active::before {
 
 .user-menu--footer {
   margin-left: auto;
-  width: 336px;
+  width: 344px;
   margin-top: 47px;
 }
 
@@ -1064,7 +1069,7 @@ a.slider-navigation--active::before {
 }
 
 .main-footer .container {
-  width: 1165px;
+  width: 1173px;
 }
 
 .main-footer .site-navigation li {
