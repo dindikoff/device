@@ -146,8 +146,8 @@ a {
 }
 
 .inner-html .main-header {
-  padding-left: 54px;
-  padding-right: 53px;
+  padding-left: 58px;
+  padding-right: 57px;
 }
 
 .main-header .logo {
@@ -301,6 +301,10 @@ a {
 .user-login .logout {
   margin-left: -10px;
   cursor: pointer;
+}
+
+.logout a {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-menu a {
