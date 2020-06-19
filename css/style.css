@@ -999,6 +999,11 @@ a.slider-navigation--active::before {
   padding-left: 13px;
 }
 
+.inner-footer {
+  margin-top: 2px;
+  padding-top: 2px;
+}
+
 .inner-footer .container {
   width: 1172px;
   padding: 0;
@@ -1648,7 +1653,8 @@ a.slider-navigation--active::before {
 .pagination {
   display: flex;
   width: 760px;
-  margin-top: 34px;
+  height: 70px;
+  margin-top: 40px;
   margin-bottom: 78px;
   justify-content: center;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
@@ -1664,7 +1670,7 @@ a.slider-navigation--active::before {
 
   padding-left: 30px;
   padding-right: 28px;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 
