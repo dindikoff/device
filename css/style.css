@@ -1617,12 +1617,14 @@ a.slider-navigation--active::before {
 }
 
 .catalog-item--desc {
+  width: 360px;
   display: flex;
   margin-top: 20px;
   margin-left: 2px;
 }
 
 .catalog-item-title {
+  width: 274px;
   font-family: 'GilroyBold', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   font-size: 18px;
   line-height: 22px;
@@ -1630,13 +1632,17 @@ a.slider-navigation--active::before {
 }
 
 .catalog-item-price {
+  width: 84px;
   font-family: 'GilroyLight', 'Arial', sans-serif;
-  display: block;
+  display: flex;
+  font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   margin-left: auto;
-  margin-top: 5px;
-  letter-spacing: 0.05em;
+  margin-top: 3px;
+  letter-spacing: 1.2px;
+  position: relative;
+  right: -5px;
 }
 
 .pagination {
