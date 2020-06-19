@@ -124,7 +124,7 @@ a {
 }
 
 .container {
-  width: 1152px;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -140,8 +140,8 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  padding-left: 54px;
-  padding-right: 54px;
+  padding-left: 58px;
+  padding-right: 57px;
   background-color: var(--special-yellow);
 }
 
@@ -196,8 +196,7 @@ a {
   visibility: hidden;
 }
 
-.search-field:focus,
-.search-field:hover {
+.search-field:focus {
   border-bottom: 1px solid #000;
   outline: 0;
 }
@@ -389,11 +388,12 @@ li.user-menu-card--basket {
   position: absolute;
   z-index: 5;
   display: none;
-  width: 1040px;
+  width: 1100px;
   margin: 0;
   background-color: var(--special-yellow);
   padding-top: 29px;
   padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .inner-html .catalog-menu {
@@ -423,7 +423,7 @@ li.user-menu-card--basket {
 }
 
 .top-navigation {
-  padding-bottom: 164px;
+  padding-bottom: 160px;
   margin-left: 2px;
 }
 
@@ -464,6 +464,10 @@ li.user-menu-card--basket {
   opacity: 0.3;
 }
 
+.promo {
+  margin-top: 5px;
+}
+
 .sliders {
   position: relative;
   list-style: none;
@@ -477,7 +481,7 @@ li.user-menu-card--basket {
 
 .slider-item:nth-child(1) img {
   top: -25px;
-  left: 12px;
+  left: 17px;
 }
 
 .slider-item:nth-child(2) img {
@@ -513,7 +517,7 @@ li.user-menu-card--basket {
   position: relative;
   z-index: 1;
   margin-top: 69px;
-  width: 556px;
+  width: 560px;
 }
 
 .slider-content::before {
@@ -532,8 +536,8 @@ li.user-menu-card--basket {
   height: 170px;
   background-image: url('../img/01.png');
   background-repeat: no-repeat;
-  top: -66px;
-  right: 38px;
+  top: -69px;
+  right: 42px;
 }
 
 .slider-item:nth-child(2) .slider-content::after {
@@ -680,6 +684,18 @@ a.slider-navigation--active::before {
   background-color: var(--special-yellow);
 }
 
+.popular-item:hover a::before{
+  background-color: var(--special-yellow-dark);
+}
+
+.popular-item:active a::after{
+  opacity: 0.3;
+}
+
+.popular-item:active .popular-link {
+  color: rgba(255, 0, 0, 0.3);
+}
+
 .popular-item a::after {
   content: '';
   position: absolute;
@@ -778,7 +794,7 @@ a.slider-navigation--active::before {
   display: flex;
   position: relative;
   top: -89px;
-  left: -3px;
+  left: 0px;
 }
 
 .service-navigation,
@@ -797,7 +813,7 @@ a.slider-navigation--active::before {
 }
 
 .service-navigation-item {
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .service-navigation-item:first-child {
@@ -805,7 +821,7 @@ a.slider-navigation--active::before {
 }
 
 .service-navigation-item:last-child {
-  margin-top: 39px;
+  margin-top: 40px;
 }
 
 .service-navigation::after {
@@ -821,7 +837,7 @@ a.slider-navigation--active::before {
 
 .service-list {
   width: 611px;
-  margin-left: 79px;
+  margin-left: 80px;
 }
 
 .service-title {
@@ -857,7 +873,7 @@ a.slider-navigation--active::before {
 
 .service-delivery::before {
   background-image: url('../img/delivery.svg');
-  right: -58px;
+  right: -52px;
   top: 60px;
 }
 
