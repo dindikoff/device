@@ -40,6 +40,8 @@
   --decoration-line: #FFC600;
   --special-gray-second: #dbdbdb;
   --alternative-gray: #ababab;
+  --modal-special-gray: #EAEAEA;
+  --invalid: #F6DADA;
 }
 
 html {
@@ -114,7 +116,8 @@ a {
   background-color: var(--special-yellow-dark);
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus::before {
   height: 40px;
   top: -8px;
 }
@@ -152,7 +155,7 @@ a {
 
 .main-header .logo {
   margin-top: -20px;
-  margin-bottom: 17px;
+  margin-bottom: 7px;
 }
 
 .logo svg:hover {
@@ -176,8 +179,10 @@ a {
   background-repeat: no-repeat;
   background-position: 2px;
   background-size: 14px;
+  padding: 15px 13px;
   padding-left: 38px;
   background-color: transparent;
+  
 }
 
 .search-filter {
@@ -225,7 +230,7 @@ a {
 .search-button {
   display: none;
   position: relative;
-  padding: 15px 13px;
+  padding: 0 12px;
   font-size: 15px;
   text-transform: uppercase;
   background-color: transparent;
@@ -265,6 +270,7 @@ a {
 .user-menu-card {
   width: 240px;
   padding-left: 14px;
+  margin-top: 10px;
 }
 
 .user-menu-card--compare svg {
@@ -281,7 +287,7 @@ a {
 
 .user-menu-wrap {
   display: flex;
-  margin-bottom: 44px;
+  margin-bottom: 36px;
   justify-content: space-between;
 }
 
@@ -296,6 +302,7 @@ a {
 .user-login {
   width: 258px;
   margin-left: 88px;
+  margin-top: 10px;
 }
 
 .user-login .logout {
@@ -392,18 +399,19 @@ li.user-menu-card--basket {
   position: absolute;
   z-index: 5;
   display: none;
-  width: 1100px;
+  width: 1160px;
   margin: 0;
+  left: 140px;
   background-color: var(--special-yellow);
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 32px;
-  padding-left: 0;
+  padding-left: 60px;
 }
 
 .inner-html .catalog-menu {
-  left: 144px;
-  padding-left: 56px;
-  width: 1152px;
+  left: 140px;
+  padding-left: 60px;
+  width: 1160px;
 }
 
 .top-navigation-item--dropdown:hover .catalog-menu,
@@ -916,7 +924,7 @@ a.slider-navigation--active::before {
 }
 
 .about-us {
-  margin-top: 90px;
+  margin-top: 87px;
 }
 
 .about-us .container {
@@ -1230,7 +1238,7 @@ a.slider-navigation--active::before {
 
 .modal-form {
   display: none;
-  z-index: 2;
+  z-index: 1000;
   width: 960px;
   min-height: 550px;
   margin-left: -480px;
@@ -1308,6 +1316,20 @@ a.slider-navigation--active::before {
   margin-top: 5px;
   padding-top: 20px;
   font-size: 14px;
+}
+
+.modal-form input:hover,
+.modal-form textarea:hover {
+  background-color: var(--modal-special-gray);
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  background-color: transparent;
+}
+
+.modal-form input:invalid {
+  background-color: var(--invalid);
 }
 
 .modal-form input::placeholder {
@@ -1611,7 +1633,7 @@ a.slider-navigation--active::before {
 }
 
 .catalog-item-compare:hover {
-  color: rgba(255, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .catalog-item-compare:active {
