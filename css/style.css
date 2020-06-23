@@ -1571,13 +1571,13 @@ a.slider-navigation--active::before {
 .filter-section-list {
   padding: 0;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 25px;
   list-style-type: none;
 }
 
 .filter-section-list li {
   padding-bottom: 20px;
-  padding-left:26px;
+  padding-left:44px;
 }
 
 .filter-section-list label {
@@ -1595,11 +1595,64 @@ a.slider-navigation--active::before {
 }
 
 .filter-section--bluetooth {
-  margin-top: -18px;
+  margin-top: -16px;
 }
 
 .filter-section--bluetooth li {
-  padding-left: 24px;
+  padding-left: 41px;
+}
+
+.check-box-input,
+.radio-box-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check {
+  position: relative;
+}
+
+.check label{
+  cursor: pointer;
+}
+
+.check-box,
+.radio-box {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  background-image: url('../img/checkbox-off2.svg');
+  cursor: pointer;
+}
+
+
+.check-box-input:checked + .check-box {
+  background-image: url('../img/checkbox-on.svg');
+}
+
+.radio-box {
+  background-image: url('../img/radio-off.svg');
+}
+
+.radio-box-input:checked + .radio-box {
+  background-image: url('../img/radio-on.svg');
+}
+
+.check-box-input:hover + .check-box,
+.radio-box-input:hover + .radio-box
+ {
+  opacity: 0.6;
+}
+
+.check-box-input:disabled ~ .check-box-text,
+.check-box-input:disabled ~ .check-box,
+.radio-box-input:disabled ~ .radio-box-text,
+.radio-box-input:disabled ~ .radio-box
+ {
+  opacity: 0.3;
 }
 
 .catalog {
