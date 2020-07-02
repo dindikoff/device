@@ -495,6 +495,10 @@ li.user-menu-card--basket {
   margin-top: 5px;
 }
 
+.promo .container {
+  position: relative;
+}
+
 .sliders {
   position: relative;
   list-style: none;
@@ -565,6 +569,7 @@ li.user-menu-card--basket {
   background-repeat: no-repeat;
   top: -69px;
   right: 42px;
+  z-index: -1;
 }
 
 .slider-item:nth-child(2) .slider-content::after {
@@ -654,8 +659,8 @@ li.user-menu-card--basket {
   display: flex;
   width: 112px;
   position: absolute;
-  right: 228px;
-  top: 536px;
+  bottom: 144px;
+  right: 88px;
   justify-content: space-between;
   list-style: none;
 }
