@@ -369,6 +369,11 @@ li.user-menu-card--basket {
   display: flex;
 }
 
+.catalog-top-menu {
+  padding: 0;
+  width: 500px;
+}
+
 
 .sub-menu-list {
   padding: 0;
@@ -443,12 +448,17 @@ li.user-menu-card--basket {
   padding-bottom: 47px;
 }
 
-.top-navigation-item:nth-child(2) {
+.top-navigation-item {
   margin-right: 35px;
 }
 
-.top-navigation-item:last-child {
-  margin-left: auto;
+.top-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 503px;
+  padding: 0;
+  margin: 0;
+  margin-top: -2px;
 }
 
 .site-navigation-link {
@@ -458,6 +468,11 @@ li.user-menu-card--basket {
   letter-spacing: 0.2em;
   font-size: 18px;
   line-height: 22px;
+}
+
+.top-navigation-list .top-navigation-item:nth-child(3n) {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .top-navigation--first {
