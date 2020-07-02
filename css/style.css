@@ -508,6 +508,7 @@ li.user-menu-card--basket {
 
 .slider-item img {
   position: relative;
+  object-fit: cover;
 }
 
 .slider-item:nth-child(1) img {
@@ -944,7 +945,7 @@ a.slider-navigation--active::before {
 }
 
 .about-us {
-  margin-top: 87px;
+  margin-top: 89px;
 }
 
 .about-us .container {
@@ -1014,7 +1015,21 @@ a.slider-navigation--active::before {
 }
 
 .info-list li {
+  position: relative;
   margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.info-list li::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  
+  border-radius: 50%;
+  border: 2px solid var(--basic-gray-light);
 }
 
 .info-list li:last-child {
