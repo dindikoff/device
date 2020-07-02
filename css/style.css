@@ -1743,6 +1743,10 @@ a.slider-navigation--active::before {
   width: 360px;
 }
 
+.catalog-item img {
+  object-fit: cover;
+}
+
 .catalog-item:hover img {
   opacity: 0.7;
 }
