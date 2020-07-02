@@ -1262,8 +1262,8 @@ a.slider-navigation--active::before {
 }
 
 .modal-map {
-  display: none;
-  z-index: 2;
+  display: flex;
+  z-index: 100;
   width: 994px;
   min-height: 554px;
 
