@@ -1493,11 +1493,17 @@ a.slider-navigation--active::before {
 
 .sorting-list {
   display: flex;
+  flex-wrap: wrap;
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-left: 68px;
   margin-top: -6px;
+}
+
+.sorting-list--links {
+  width: 451px;
 }
 
 .sorting {
@@ -1520,11 +1526,11 @@ a.slider-navigation--active::before {
 }
 
 .sorting-option {
-  margin-left: 18px;
+  margin-right: 18px;
 }
 
-.sorting-option:first-child {
-  margin-left: 0;
+.sorting-option:last-child {
+  margin-right: 0;
 }
 
 .sorting-option button {
@@ -1551,10 +1557,6 @@ a.slider-navigation--active::before {
 .sorting-arrow a {
   display: block;
   background-repeat: no-repeat;
-}
-
-.sorting-list--arrow {
-  margin-left: 218px;
 }
 
 .sorting-arrow .active {
