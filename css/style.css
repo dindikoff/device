@@ -141,6 +141,7 @@ a {
 
 .main-header {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-top: 40px;
   padding-left: 58px;
@@ -406,11 +407,11 @@ li.user-menu-card--basket {
   display: none;
   width: 1160px;
   margin: 0;
-  left: 140px;
   background-color: var(--special-yellow);
   padding-top: 27px;
   padding-bottom: 32px;
   padding-left: 60px;
+  left: 0;
 }
 
 .inner-html .catalog-menu {
@@ -1262,7 +1263,7 @@ a.slider-navigation--active::before {
 }
 
 .modal-map {
-  display: flex;
+  display: none;
   z-index: 100;
   width: 994px;
   min-height: 554px;
@@ -1272,7 +1273,7 @@ a.slider-navigation--active::before {
 }
 
 .modal-form {
-  display: none;
+  display: flex;
   z-index: 1000;
   width: 960px;
   min-height: 550px;
@@ -1367,7 +1368,8 @@ a.slider-navigation--active::before {
   background-color: var(--invalid);
 }
 
-.modal-form input::placeholder {
+.modal-form input::placeholder,
+.modal-form textarea::placeholder {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.4);
 }
