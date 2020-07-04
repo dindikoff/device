@@ -302,7 +302,7 @@ a {
 
 .user-login {
   width: 258px;
-  margin-left: 88px;
+  margin-left: 86px;
   margin-top: 10px;
 }
 
@@ -1589,7 +1589,7 @@ a.slider-navigation--active::before {
 .left-filter {
   display: flex;
   align-items: flex-end;
-  width: 370px;
+  width: 254px;
   padding-right: 54px;
   background-color: var(--basic-gray-light);
 }
@@ -1603,7 +1603,7 @@ a.slider-navigation--active::before {
 }
 
 .filter-section {
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   font-size: 14px;
   line-height: 19px;
   border: none;
@@ -1636,7 +1636,7 @@ a.slider-navigation--active::before {
 }
 
 .filter-section--bluetooth {
-  margin-top: -16px;
+  margin-top: -13px;
 }
 
 .filter-section--bluetooth li {
@@ -1745,7 +1745,7 @@ a.slider-navigation--active::before {
 .main-catalog {
   display: flex;
   flex-wrap: wrap;
-  width: 876px;
+  width: 760px;
   padding-left: 72px;
   font-family: 'GilroyLight', 'OpenSans', 'Arial', 'Helvetica', sans-serif;
   letter-spacing: 0.05em;
@@ -1789,7 +1789,7 @@ a.slider-navigation--active::before {
   grid-template-columns: 360px 360px;
   gap: 50px 40px;
 
-  margin-top: 67px;
+  margin-top: 69px;
 }
 
 .catalog-item--desc {
@@ -1932,6 +1932,8 @@ a.slider-navigation--active::before {
 }
 
 .price-controls {
+  display: block;
+  padding-top:2px;
   font-family: 'GilroyLight', 'Arial', sans-serif;
   width: 200px;
 }
