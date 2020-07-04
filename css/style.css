@@ -415,7 +415,6 @@ li.user-menu-card--basket {
 }
 
 .inner-html .catalog-menu {
-  left: 140px;
   padding-left: 60px;
   width: 1160px;
 }
@@ -463,7 +462,7 @@ li.user-menu-card--basket {
 }
 
 .site-navigation-link {
-  font-family: 'GilroyBold', 'Arial';
+  font-family: 'GilroyBold', 'Arial', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
@@ -953,7 +952,7 @@ a.slider-navigation--active::before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 127px;
-  margin-bottom: 80px;
+  margin-bottom: 88px;
 }
 
 .info {
@@ -1064,7 +1063,7 @@ a.slider-navigation--active::before {
 .user-menu--footer {
   margin-left: auto;
   width: 344px;
-  margin-top: 47px;
+  margin-top: 41px;
 }
 
 .inner-html .user-menu--footer {
@@ -1188,7 +1187,7 @@ a.slider-navigation--active::before {
 }
 
 .main-footer .logo {
-  margin-top: 70px;
+  margin-top: 63px;
 }
 
 .inner-footer .logo {
@@ -1213,6 +1212,7 @@ a.slider-navigation--active::before {
   width: 960px;
   justify-content: center;
   list-style-type: none;
+  padding-bottom: 44px;
 }
 
 .social-wrapper {
@@ -1505,7 +1505,7 @@ a.slider-navigation--active::before {
 }
 
 .sorting-list--links {
-  width: 451px;
+  width: 449px;
 }
 
 .sorting {
@@ -1553,7 +1553,7 @@ a.slider-navigation--active::before {
 }
 
 .sorting-arrow--down {
-  margin-left: 20px;
+  margin-left: 24px;
 }
 
 .sorting-arrow a {
@@ -1590,14 +1590,16 @@ a.slider-navigation--active::before {
   display: flex;
   align-items: flex-end;
   width: 370px;
-  padding-right: 56px;
+  padding-right: 54px;
   background-color: var(--basic-gray-light);
 }
 
 .left-filter button {
-  width: 200px;
-  margin-top: -5px;
+  width: 203px;
+  margin-top: -4px;
   margin-left: 11px;
+  padding-left: 21px;
+  padding-right: 27px;
 }
 
 .filter-section {
@@ -1615,8 +1617,8 @@ a.slider-navigation--active::before {
 }
 
 .filter-section-list li {
-  padding-bottom: 20px;
-  padding-left: 44px;
+  padding-bottom: 19px;
+  padding-left: 42px;
 }
 
 .filter-section-list label {
@@ -1638,7 +1640,12 @@ a.slider-navigation--active::before {
 }
 
 .filter-section--bluetooth li {
-  padding-left: 41px;
+  padding-left: 39px;
+}
+
+.radio-box-text {
+  display: block;
+  padding-top: 2px;
 }
 
 .check-box-input,
@@ -1690,6 +1697,11 @@ a.slider-navigation--active::before {
 .radio-box-input:disabled~.radio-box-text,
 .radio-box-input:disabled~.radio-box {
   opacity: 0.3;
+}
+
+.check-box-text {
+  display: block;
+  padding-top:1px;
 }
 
 .catalog {
