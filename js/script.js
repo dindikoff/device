@@ -129,7 +129,6 @@ showPin(0);
 sliderPinsContainer.addEventListener('click', function (evt) {
   evt.preventDefault();
   var target = evt.target;
-  console.log(target);
 
   for (var i = 0; i < sliderPins.length; i++) {
     if (evt.target == sliderPins[i]) {
