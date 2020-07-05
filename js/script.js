@@ -73,12 +73,12 @@ var mapModal = document.querySelector('.modal-map');
 
 var mapClose = document.querySelector('.modal-map .button--close');
 
-mapLink.addEventListener('click', function(evt) {
+mapLink.addEventListener('click', function (evt) {
   evt.preventDefault();
   mapModal.classList.add('modal-map--show');
 });
 
-mapClose.addEventListener('click', function(evt) {
+mapClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   mapModal.classList.remove('modal-map--show');
 });
@@ -88,6 +88,55 @@ window.addEventListener('keydown', function (evt) {
     if (mapModal.classList.contains('modal-map--show')) {
       evt.preventDefault();
       mapModal.classList.remove('modal-map--show');
+    }
+  }
+});
+
+
+// Slider
+
+var sliderList = document.querySelectorAll('.slider-item');
+var sliderPinsContainer = document.querySelector('.slider-navigation');
+var sliderPins = document.querySelectorAll('.slider-navigation li a');
+
+function hideSlider() {
+  for (var i = 0; i < sliderList.length; i++) {
+    sliderList[i].classList.remove('slider-item--active');
+  }
+}
+
+function hideActivePin() {
+  for (var i = 0; i < sliderPins.length; i++) {
+    sliderPins[i].classList.remove('slider-navigation--active');
+  }
+}
+
+function showSlider(i) {
+  sliderList[i].classList.add('slider-item--active');
+
+}
+
+function showPin(i) {
+  sliderPins[i].classList.add('slider-navigation--active');
+}
+
+hideSlider();
+hideActivePin();
+
+showSlider(0);
+showPin(0);
+
+sliderPinsContainer.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  var target = evt.target;
+  console.log(target);
+
+  for (var i = 0; i < sliderPins.length; i++) {
+    if (evt.target == sliderPins[i]) {
+      hideActivePin();
+      hideSlider();
+      showPin(i);
+      showSlider(i);
     }
   }
 });
