@@ -518,12 +518,12 @@ li.user-menu-card--basket {
 
 .slider-item:nth-child(2) img {
   top: 0px;
-  left: 39px;
+  left: 44px;
 }
 
 .slider-item:nth-child(3) img {
   top: 57px;
-  left: -47px;
+  left: -42px;
 }
 
 .slider-header {
@@ -582,7 +582,7 @@ li.user-menu-card--basket {
   background-image: url('../img/02.png');
   background-repeat: no-repeat;
   top: -66px;
-  right: 34px;
+  right: 42px;
 }
 
 .slider-item:nth-child(3) .slider-content::after {
