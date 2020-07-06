@@ -1162,7 +1162,7 @@ a.slider-navigation--active::before {
 }
 
 .inner-html .user-shop--footer {
-  margin-left: 32px;
+  margin-left: 33px;
 }
 
 .user-shop--footer li:first-child {
@@ -1188,7 +1188,7 @@ a.slider-navigation--active::before {
 }
 
 .footer-second-menu--inner li {
-  margin-left: 25px;
+  margin-left: 23px;
 }
 
 .user-menu--footer li:first-child {
@@ -1684,7 +1684,6 @@ a.slider-navigation--active::before {
 }
 
 .sorting-option button:hover {
-  /* opacity: 0.6; */
   color: var(--opacity06);
 }
 
