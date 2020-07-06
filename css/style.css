@@ -1849,7 +1849,9 @@ a.slider-navigation--active::before {
 }
 
 .check-box-input:hover+.check-box,
-.radio-box-input:hover+.radio-box {
+.radio-box-input:hover+.radio-box,
+.check-box-input:focus+.check-box,
+.radio-box-input:focus+.radio-box{
   opacity: 0.6;
 }
 
