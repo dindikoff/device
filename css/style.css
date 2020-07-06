@@ -217,10 +217,13 @@ body {
   outline: 0;
 }
 
-.search-field:focus~.search-button {
+.search-field:focus~.search-button{
   display: block;
 }
 
+.search-button:hover {
+  display: block;
+}
 
 .button {
   text-transform: uppercase;
@@ -1665,7 +1668,7 @@ a.slider-navigation--active::before {
   font-size: 14px;
   line-height: 19px;
 
-  opacity: 0.3;
+  color: var(--opacity03);
 }
 
 .sorting-option {
@@ -1681,11 +1684,12 @@ a.slider-navigation--active::before {
 }
 
 .sorting-option button:hover {
-  opacity: 0.6;
+  /* opacity: 0.6; */
+  color: var(--opacity06);
 }
 
 .sorting-option button:active {
-  opacity: 1;
+  color: var(--basic-black);
 }
 
 .sorting-list--arrow {
