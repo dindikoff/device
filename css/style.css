@@ -213,7 +213,7 @@ body {
 }
 
 .search-field:focus {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--basic-black);
   outline: 0;
 }
 
@@ -1130,7 +1130,7 @@ a.slider-navigation--active::before {
 }
 
 .user-menu--footer-link:hover {
-  color: #fff;
+  color: var(--basic-white);
 }
 
 .user-menu--footer-link:hover::before {
