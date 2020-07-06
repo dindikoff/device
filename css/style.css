@@ -1661,7 +1661,7 @@ a.slider-navigation--active::before {
   width: 852px;
 }
 
-.sorting-option button {
+.sorting-option a {
   background-color: transparent;
   border: none;
   font-family: 'OpenSans', 'Arial', sans-serif;
@@ -1679,15 +1679,15 @@ a.slider-navigation--active::before {
   margin-right: 0;
 }
 
-.sorting-option button {
+.sorting-option a {
   cursor: pointer;
 }
 
-.sorting-option button:hover {
+.sorting-option a:hover {
   color: var(--opacity06);
 }
 
-.sorting-option button:active {
+.sorting-option a:active {
   color: var(--basic-black);
 }
 
